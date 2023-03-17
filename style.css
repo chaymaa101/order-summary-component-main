@@ -1,0 +1,80 @@
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+ 
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Ce bloc de code CSS définit des styles pour tous les éléments HTML de la page en utilisant l'astérisque (*) comme sélecteur, ce qui signifie qu'il s'applique à tous les éléments de la page. Les trois propriétés CSS utilisées sont :
+margin: 0; : elle supprime les marges (les espaces) autour de l'élément.
+padding: 0; : elle supprime les marges intérieures (les espaces entre le contenu et la bordure) de l'élément.
+box-sizing: border-box; : elle modifie le modèle de boîte de l'élément pour qu'il inclue les bordures et les rembourrages dans la largeur et la hauteur de l'élément, plutôt que de les ajouter en plus de la largeur et de la hauteur.
+En utilisant ces styles, on peut créer une page Web sans marges ni remplissages indésirables et éviter les problèmes liés au calcul des dimensions des éléments HTML. */
+img{
+    max-width: 100%;
+}
+body{
+    font-family:"Red Hat Display" ,sans-serif ;
+    background-color: hsl(176, 38%, 85%);
+    text-align: center;
+}
+p{
+    font-size: 16px;
+}
+button{
+    font-family:inherit;
+}
+.bg_image{
+    background: url("./images/pattern-background-mobile.svg") no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.btn{
+    border: 5px;
+    padding: 5px 10px;
+    /* "padding: 5px 10px;" est une règle de style CSS qui s'applique à un élément HTML et qui spécifie la quantité d'espace vide (ou "rembourrage") à ajouter à l'intérieur de l'élément. */
+     border-radius: border-box ;
+     font-weight: bold;
+     font-size: 16px;
+}
+.btn-change{
+    background-color: transparent;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+}
+.container{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44% ,0.15);
+    /* Décalage horizontal (offset-x): 3 pixels
+Décalage vertical (offset-y): 3 pixels
+Rayon de flou (blur radius): 3 pixels
+Couleur de l'ombre: un ton de bleu-vert avec une teinte de 228 degrés, une saturation de 45% et une luminosité de 44%
+Opacité de l'ombre: 0.15 (15%) */
+}
+h1{
+    color: hsl(223, 47%, 23%);
+}
+/* attribution */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media (min-width: 768px){
+    .bg_image{
+        background: url("./images/pattern-background-desktop.svg") no-repeat center/cover;
+        height: 50vh;
+    }
+}
